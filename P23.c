@@ -21,6 +21,7 @@ char *read_file(char *filename) {
 	fread(buffer, sizeof(char), length, f);
 	buffer[length] = '\0';
 
+	fclose(f);
 	return (buffer);
 }
 
