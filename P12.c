@@ -57,6 +57,9 @@ int main() {
 	printf("Enter a string: ");
 	scanf("%s", user_input);
 
+	char *pattern = malloc(sizeof(char) * (strlen(user_input) + 1));
+	strcpy(pattern, user_input);
+
 	//remove duplicate
 	for (int i = 0; i < data->total; i++) {
 		if (strcmp(data->items[i], user_input) == 0) {
@@ -67,22 +70,20 @@ int main() {
 	struct timeb sort_start, sort_end;
 	ftime(&sort_start);
 	//sort user input signature
-	qsort(user_input, strlen(user_input), sizeof(char), compare_chars);
+	qsort(pattern, strlen(pattern), sizeof(char), compare_chars);
 
 	//sort all data strings into signature
 	for (int i = 0; i < data->total; i++) {
 		qsort(data->items[i], strlen(data->items[i]), sizeof(char), compare_chars);
 	}
-
-	//sort vector of strings by signature
-	qsort(data->items, data->total, sizeof(void*), compare_strings);
 	ftime(&sort_end);
+
 
 	struct timeb search_start, search_end;
 	ftime(&search_start);
 	unsigned counter = 0;
 	for (int i = 0; i < data->total; i++) {
-		if (is_anagram_sorted(user_input, vector_get(data, i))){
+		if (is_anagram_sorted(pattern, vector_get(data, i))){
 			counter++;
 		}
 	}
@@ -96,9 +97,11 @@ int main() {
 	for (int i = 0; i < data->total; i++) free(data->items[i]);
 	vector_free(data);
 	free(data);
+	free(pattern);
 	return (1);
 }
 
+//qsort(data->items, data->total, sizeof(void*), compare_strings);
 /* for (int i = 0; i < data->total; i++) {
 	printf("%s\n", (char*)data->items[i]);
 } */ //printing utility
