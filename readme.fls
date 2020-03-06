@@ -1,7 +1,7 @@
 PWD c:\Users\Jamie\Documents\School\Year2\3490\A3
 INPUT C:\Users\Jamie\AppData\Local\MiKTeX\2.9\miktex\data\le\pdftex\pdflatex.fmt
-INPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\analysis.tex
-OUTPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\analysis.log
+INPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\readme.tex
+OUTPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\readme.log
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\article.cls
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\base\size11.clo
@@ -33,9 +33,9 @@ INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg
 INPUT C:\Program Files\MiKTeX 2.9\tex\latex\listings\listings.cfg
-INPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\analysis.aux
-INPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\analysis.aux
-OUTPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\analysis.aux
+INPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\readme.aux
+INPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\readme.aux
+OUTPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\readme.aux
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmr8.tfm
@@ -56,9 +56,9 @@ INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmmi10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmex10.tfm
 INPUT C:\Program Files\MiKTeX 2.9\fonts\tfm\public\cm\cmbx12.tfm
-OUTPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\analysis.pdf
+OUTPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\readme.pdf
 INPUT C:\Users\Jamie\AppData\Local\MiKTeX\2.9\pdftex\config\pdftex.map
-INPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\analysis.aux
+INPUT c:\Users\Jamie\Documents\School\Year2\3490\A3\readme.aux
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Program Files\MiKTeX 2.9\fonts\type1\public\amsfonts\cm\cmbx12.pfb

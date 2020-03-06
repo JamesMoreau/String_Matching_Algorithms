@@ -10,6 +10,11 @@
     
 \title{CIS 3490 Assigment 3 - String Matching Algorithm}
 \maketitle
+
+\section{Instructions}
+to run my programs, simply type "make", and execute the individual 
+output files (no commandline arguments needed).
+
 \section{Patterns}
 Here are the patterns I will be using to analyze the efficiency of each algorithm.
 \begin{enumerate}
@@ -64,25 +69,9 @@ Average is 27,405.20 shifts per millisecond
 
 Average is 37,046.51 shifts per millisecond
 
-% No need for this last analysis
-\subsection{P23}
-\begin{enumerate}
-    \item 112,110.03
-    \item 114,140.39
-    \item 100,454.38
-    \item 120,366.1
-    \item 100,519.07
-    \item 156,592.55
-    \item 118,993.84
-    \item 114,586.66
-    \item 103,875.73
-    \item 124,446.73
-\end{enumerate}
-
-Average is 116,608.548 shifts per millisecond
-
 \section{Conclusion}
-From the analysis, we can see that algorithms which take advantage of precomputed
-tables perform much better than naive methods.
+From the analysis, we can see that the horspool algorithm which take advantage of 
+a precomputed table to determine how far it can shift at each iteration performs 
+significantly better than the naive method.
 
 \end{document}
