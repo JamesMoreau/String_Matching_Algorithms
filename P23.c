@@ -43,7 +43,7 @@ int main() {
 	ftime(&search_start);
 
 	//tables
-	int *border_position = malloc(sizeof(int) * (pattern_length + 1));
+	int *border_table = malloc(sizeof(int) * (pattern_length + 1));
 	int *shift_table = malloc(sizeof(int) * (pattern_length + 1));
 
 	for (int i = 0; i < pattern_length + 1; i++)
@@ -51,27 +51,27 @@ int main() {
 
 	int k = pattern_length;
 	int j = pattern_length + 1;
-	border_position[k] = j;
+	border_table[k] = j;
 	while (k > 0) {
 		while (j <= pattern_length && pattern[k - 1] != pattern[j - 1]) {
 			if (shift_table[j] == 0)
 				shift_table[j] = j - k;
 
-			j = border_position[j];
+			j = border_table[j];
 		}
 		
 		k -= 1;
 		j -= 1;
-		border_position[k] = j;
+		border_table[k] = j;
 	}
 
-	j = border_position[0];
+	j = border_table[0];
 	for (int i = 0; i <= pattern_length; i++) {
 		if (shift_table[i] == 0)
 			shift_table[i] = j;
 
 		if (i == j)
-			j = border_position[j];
+			j = border_table[j];
 	}
 
 	int search_count = 0;
@@ -102,7 +102,7 @@ int main() {
 	/* cleanup */
 	free(text);
 	free(pattern);
-	free(border_position);
+	free(border_table);
 	free(shift_table);
 	return (1);
 }
